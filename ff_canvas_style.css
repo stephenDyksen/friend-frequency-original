@@ -1,0 +1,419 @@
+/*
+ff_canvas_style.css provides styling for official_canvas.php
+Author: Stephen Dyksen (srd22)
+Date: May 22, 2014
+Calvin College CS 396
+*/
+
+* {
+padding: 0 0 0 0;
+margin: 0 0 0 0
+}
+
+body {
+font-style: normal;
+font-weight: bold;
+font-family: 'Varela Round', sans-serif;
+color: #150C6C;
+font-size: 15px;
+}
+
+a img {
+    border:none;
+}
+
+#gameWrapper {
+margin: 10 auto;
+width: 760px;
+height: 800px;
+background: #ECF7F8;
+position: relative;
+border-radius: 15px;
+}
+
+#friendZone {
+background: none repeat scroll 0 0 #49b7f7;
+border-radius: 18px;
+float: left;
+height: 600px;
+margin-left: 5px;
+margin-top: 10px;
+position: relative;
+width: 220px;
+}
+
+#myGames {
+width: 208px;
+height: 50px;
+margin-top: 5px;
+margin-left: 6px;
+text-align: center;
+font-size: 24px;
+padding-bottom: 7px;
+position: absolute;
+}
+
+#myGames #showCurrentGamesButton {
+width: 104px;
+height: 20px;
+margin-top: 3px;
+margin-left: 0px;
+text-align: center;
+font-size: 18;
+padding-bottom: 20px;
+position: absolute;
+z-index: 0;
+background: #FFFFFF;
+border-radius: 15px;
+padding-top: 4px;
+cursor:default;
+}
+
+#myGames #showFinishedGamesButton {
+width: 104px;
+height: 20px;
+margin-top: 3px;
+margin-left: 104px;
+text-align: center;
+font-size: 18px;
+padding-bottom: 20px;
+position: absolute;
+background: #ECF7F8;
+border-radius: 15px;
+padding-top: 4px;
+cursor:default;
+}
+
+#gameScrollers {
+margin-top: 102px;
+height: 491px;
+margin-left: 6px;
+overflow: hidden;
+position: absolute;
+width: 208px;
+border-radius:15px;
+}
+
+#scrollingCurrentGames {
+background: none repeat scroll 0 0 #FFFFFF;
+height: 479px;
+overflow-y: scroll;
+position: absolute;
+width: 300px;
+padding-top: 15px;
+border-radius: 15px;
+z-index: 11;
+}
+
+#scrollingFinishedGames {
+background: none repeat scroll 0 0 #FFFFFF;
+height: 479px;
+overflow-y: scroll;
+position: absolute;
+width: 300px;
+padding-top: 15px;
+border-radius: 15px;
+z-index: 1;
+}
+
+#startNewGameButton{
+width: 200px;
+background: #49b7f7;
+height: 33px;
+border: solid #FFFFFF 4px;
+margin-left: 6px;
+text-align: center;
+z-index: 111;
+position: absolute;
+font-size: 18px;
+padding-top: 11px;
+margin-top: 65px;
+cursor:default;
+}
+
+#friendZone .gameBubble {
+float: left;
+background: #ECF7F8;
+width: 185px;
+height: 54px;
+border-radius: 12px;
+margin-left: 5px;
+margin-bottom: 5px;
+font-weight: normal;
+cursor:default;
+}
+
+#friendZone .gameBubble img {
+position: absolute;
+width: 45px;
+height: 45px;
+margin-left: 6px;
+margin-top: 5px;
+}
+
+#friendZone .gameBubble div {
+position: absolute;
+margin-left: 60px;
+margin-top: 18px;
+font-family: arial;
+}
+
+#gameMessage{
+margin-top: 20px;
+font-size: 14px;
+width: 486px;
+margin-left: 10px;
+text-align: center;
+}
+
+#gameZone {
+background: none repeat scroll 0 0 #FFFFFF;
+border-radius: 15px;
+float: left;
+height: 586px;
+margin-left: 5px;
+margin-top: 10px;
+position: relative;
+width: 510px;
+border: #49b7f7 solid 7px;
+}
+
+#instructionsAndLogo {
+background: #FFFFFF;
+border-radius: 15px;
+height: 536px;
+position: absolute;
+width: 510px;
+padding-top: 50px;
+text-align: center;
+border: #49b7f7 7px solid;
+margin-left: -7px;
+margin-top: -7px;
+z-index: 11;
+}
+
+#introInstructions {
+font-size: 17px;
+margin-top: -40;
+}
+
+#logoImage {
+width: 415px;
+margin-top: 15px;
+}
+
+#instructionsButton {
+background: #49b7f7;
+width: 115px;
+height: 24px;
+margin-top: 27px;
+margin-left: 195;
+border-radius: 7px;
+padding-top: 4px;
+cursor:help;
+}
+
+#ffGame {
+background: #FFFFFF;
+border-radius: 15px;
+height: 586px;
+position: absolute;
+width: 510px;
+padding-top: 0px;
+text-align: center;
+border: #49b7f7 7px solid;
+margin-left: -7px;
+margin-top: -7px;
+z-index: 1;
+}
+
+#wordScrollersWrapper {
+overflow: hidden;
+height: 400px;
+position: absolute;
+margin-top: 22px;
+margin-left: 12px;
+width: 485px;
+border-radius: 15px;
+}
+
+#wordZone {
+overflow-y: scroll;
+background: #ECF7F8;
+height: 400px;
+position: absolute;
+width: 550px;
+border-radius: 15px;
+}
+
+#wordZone .wordBubble {
+background: none repeat scroll 0 0 #49b7f7;
+border-radius: 0px;
+padding-top: 8px;
+padding-left: 10px;
+height: 40px;
+margin-top: 11px;
+font-size: 27px;
+}
+
+#wordZone .wordBubble .word1 {
+float: left;
+width: 230px;
+text-align: center;
+background: #FFFFFF;
+margin-right: 5px;
+height:33px;
+}
+
+#wordZone .wordBubble .word2 {
+float: left;
+width: 230px;
+text-align: center;
+background: #FFFFFF;
+height: 33px;
+}
+
+#gameZone #inputZone {
+background: none repeat scroll 0 0 #49b7f7;
+border-radius: 5px;
+height: auto;
+margin-left: 12px;
+margin-top: 431px;
+position: absolute;
+width: 475px;
+padding-top: 8px;
+padding-left: 10px;
+padding-bottom: 8px;
+}
+
+
+#inputZone #wordGuessField {
+float: left;
+color: #150C6C;
+width: 222px;
+height: 41px;
+font-size: 20px;
+padding-left: 3px;
+}
+
+#friendWordField {
+float: left;
+width: 223px;
+height: 34px;
+font-size: 24px;
+margin-left: 18px;
+background: #ECF7F8;
+text-align: center;
+padding-top: 7px;
+margin-top: 0px;
+}
+
+#inputZone #myWordField {
+position: absolute;
+color: #150C6C;
+width: 223px;
+height: 34px;
+font-size: 24px;
+margin-left: 0px;
+background: #F6FCE9;
+text-align: center;
+padding-top: 7px;
+}
+
+#gameZone #submitWordButton {
+background: none repeat scroll 0 0 #49b7f7;
+border-radius: 15px;
+height: 28px;
+margin-left: 128px;
+margin-top: 497px;
+position: absolute;
+width: 117px;
+padding-top: 12px;
+font-size: 13px;
+text-align: center;
+cursor:default;
+}
+
+#gameZone #backButton{
+background: none repeat scroll 0 0 #49b7f7;
+border-radius: 15px;
+height: 28px;
+margin-left: 12px;
+margin-top: 496px;
+position: absolute;
+width: 68px;
+padding-top: 12px;
+font-size: 13px;
+text-align: center;
+cursor:default;
+}
+
+#gameZone #deleteButton {
+background: none repeat scroll 0 0 #49b7f7;
+border-radius: 15px;
+height: 28px;
+margin-left: 380px;
+margin-top: 497px;
+position: absolute;
+width: 117px;
+padding-top: 12px;
+font-size: 13px;
+text-align: center;
+cursor:default;
+}
+
+.popups {
+text-align: center;
+font-size: 16px;
+border: #49b7f7 solid 7px;
+border-radius: 15px;
+z-index: 1111;
+display: none;
+background: #FFFFFF;
+padding-top: 20px;
+padding-bottom: 60px;
+padding-left: 12px;
+padding-right: 12px;
+}
+
+#howToPlayPopup {
+position: absolute;
+width: 550px;
+left: 95px;
+top: 70px;
+}
+
+#completedGamePopup {
+position: absolute;
+width: 213px;
+left: 270px;
+top: 120px;
+}
+
+#invalidWordPopup {
+position: absolute;
+width: 285px;
+left: 360px;
+top: 340px;
+}
+
+#completedGameFromRequestPopup {
+position: absolute;
+width: 287px;
+left: 330px;
+top: 175px;
+}
+
+.popupButton {
+border-radius: 12px;
+background: none repeat scroll 0 0 #49b7f7;
+border-radius: 15px;
+height: 28px;
+width: 100px;
+position: absolute;
+padding-top: 12px;
+font-size: 13px;
+text-align: center;
+cursor: default;
+margin-top: 8px;
+}

@@ -1,0 +1,45 @@
+/*
+ mySQL_scripts.txt contains the code to setup the database and tables used in FriendFrequency
+ Author: Stephen Dyksen (srd22)
+ Date: May 22, 2014
+ Calvin College CS 396
+*/
+
+
+CREATE DATABASE friendfrequency;
+
+//Setting up my mySQL tables in the database: friendfrequency
+
+CREATE TABLE UserTbl (
+fb_id BIGINT UNSIGNED,
+PRIMARY KEY (fb_id)
+);
+
+CREATE TABLE GameTbl (
+fb_id_a BIGINT UNSIGNED,
+fb_id_b BIGINT UNSIGNED,
+words_a varchar(425),
+words_b varchar(425),
+timestamp datetime,
+PRIMARY KEY (fb_id_a, fb_id_b)
+);
+
+CREATE TABLE ResultTbl (
+id BIGINT NOT NULL AUTO_INCREMENT,
+fb_id_a BIGINT UNSIGNED,
+fb_id_b BIGINT UNSIGNED,
+words_a varchar(425),
+words_b varchar(425),
+timestamp datetime,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE DeletedTbl (
+id BIGINT NOT NULL AUTO_INCREMENT,
+fb_id_a BIGINT UNSIGNED,
+fb_id_b BIGINT UNSIGNED,
+words_a varchar(425),
+words_b varchar(425),
+timestamp datetime,
+PRIMARY KEY (id)
+);
